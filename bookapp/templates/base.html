@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Главная</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/product">Товары</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </nav>
+</body>
+<!--<script>$('.dropdown-toggle').dropdown()</script>-->
+</html>
